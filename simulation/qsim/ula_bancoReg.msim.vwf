@@ -1,0 +1,2484 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|clock")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 32;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|colocaValorAux[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|FUNCT[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|FUNCT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|OPCODE[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|OPCODE";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rd";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rd";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rd";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rd";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rd[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rd";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rs";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rs";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rs";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rs";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rs[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rs";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rt";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rt";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rt";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rt";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|Rt[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|Rt";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|SHAMT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|SHAMT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|SHAMT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|SHAMT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|SHAMT[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "ula_bancoReg_vlg_vec_tst|SHAMT";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ula_bancoReg_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|clock")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|colocaValorAux[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 870.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 850.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 860.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 840.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|FUNCT[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 930.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|OPCODE[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rd[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rd[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rd[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rd[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rd[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 930.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rs[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rs[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rs[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rs[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 890.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rs[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 850.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rt[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rt[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rt[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rt[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|Rt[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 890.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|SHAMT[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|SHAMT[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|SHAMT[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|SHAMT[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|SHAMT[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("ula_bancoReg_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|clock";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+	CHILDREN = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|colocaValorAux[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 0;
+	CHILDREN = 35, 36, 37, 38, 39, 40;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|FUNCT[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 1;
+	PARENT = 34;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 0;
+	CHILDREN = 42, 43, 44, 45, 46, 47;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|OPCODE[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 1;
+	PARENT = 41;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+	CHILDREN = 49, 50, 51, 52, 53;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 1;
+	PARENT = 48;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 1;
+	PARENT = 48;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 1;
+	PARENT = 48;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
+	TREE_LEVEL = 1;
+	PARENT = 48;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rd[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 53;
+	TREE_LEVEL = 1;
+	PARENT = 48;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 55;
+	TREE_LEVEL = 0;
+	CHILDREN = 56, 57, 58, 59, 60;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 56;
+	TREE_LEVEL = 1;
+	PARENT = 55;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 57;
+	TREE_LEVEL = 1;
+	PARENT = 55;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 58;
+	TREE_LEVEL = 1;
+	PARENT = 55;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 1;
+	PARENT = 55;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rs[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 60;
+	TREE_LEVEL = 1;
+	PARENT = 55;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 61;
+	TREE_LEVEL = 0;
+	CHILDREN = 62, 63, 64, 65, 66;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 62;
+	TREE_LEVEL = 1;
+	PARENT = 61;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 1;
+	PARENT = 61;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 1;
+	PARENT = 61;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 1;
+	PARENT = 61;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|Rt[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 1;
+	PARENT = 61;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+	CHILDREN = 68, 69, 70, 71, 72;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 1;
+	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 1;
+	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 1;
+	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 1;
+	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|SHAMT[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 72;
+	TREE_LEVEL = 1;
+	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 73;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 74;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 75;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 76;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 77;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ula_bancoReg_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 78;
+	TREE_LEVEL = 0;
+}
+;

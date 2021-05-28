@@ -1,0 +1,430 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/20/2021 14:09:58"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    ula_bancoReg
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ula_bancoReg_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clock;
+reg [31:0] colocaValorAux;
+reg [5:0] FUNCT;
+reg [5:0] OPCODE;
+reg [4:0] Rd;
+reg reset;
+reg [4:0] Rs;
+reg [4:0] Rt;
+reg [4:0] SHAMT;
+// wires                                               
+
+// assign statements (if any)                          
+ula_bancoReg i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.colocaValorAux(colocaValorAux),
+	.FUNCT(FUNCT),
+	.OPCODE(OPCODE),
+	.Rd(Rd),
+	.reset(reset),
+	.Rs(Rs),
+	.Rt(Rt),
+	.SHAMT(SHAMT)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #5000 1'b1;
+	#5000;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b0;
+	reset = #90000 1'b1;
+	reset = #10000 1'b0;
+end 
+// SHAMT[ 4 ]
+initial
+begin
+	SHAMT[4] = 1'b0;
+end 
+// SHAMT[ 3 ]
+initial
+begin
+	SHAMT[3] = 1'b0;
+end 
+// SHAMT[ 2 ]
+initial
+begin
+	SHAMT[2] = 1'b0;
+end 
+// SHAMT[ 1 ]
+initial
+begin
+	SHAMT[1] = 1'b0;
+end 
+// SHAMT[ 0 ]
+initial
+begin
+	SHAMT[0] = 1'b0;
+end 
+// OPCODE[ 5 ]
+initial
+begin
+	OPCODE[5] = 1'b0;
+end 
+// OPCODE[ 4 ]
+initial
+begin
+	OPCODE[4] = 1'b0;
+end 
+// OPCODE[ 3 ]
+initial
+begin
+	OPCODE[3] = 1'b0;
+end 
+// OPCODE[ 2 ]
+initial
+begin
+	OPCODE[2] = 1'b0;
+end 
+// OPCODE[ 1 ]
+initial
+begin
+	OPCODE[1] = 1'b0;
+end 
+// OPCODE[ 0 ]
+initial
+begin
+	OPCODE[0] = 1'b0;
+end 
+// FUNCT[ 5 ]
+initial
+begin
+	FUNCT[5] = 1'b1;
+	FUNCT[5] = #10000 1'b0;
+	FUNCT[5] = #30000 1'b1;
+	FUNCT[5] = #10000 1'b0;
+	FUNCT[5] = #70000 1'b1;
+	FUNCT[5] = #10000 1'b0;
+end 
+// FUNCT[ 4 ]
+initial
+begin
+	FUNCT[4] = 1'b0;
+	FUNCT[4] = #140000 1'b1;
+	FUNCT[4] = #10000 1'b0;
+end 
+// FUNCT[ 3 ]
+initial
+begin
+	FUNCT[3] = 1'b0;
+	FUNCT[3] = #130000 1'b1;
+	FUNCT[3] = #10000 1'b0;
+end 
+// FUNCT[ 2 ]
+initial
+begin
+	FUNCT[2] = 1'b0;
+	FUNCT[2] = #150000 1'b1;
+	FUNCT[2] = #10000 1'b0;
+end 
+// FUNCT[ 1 ]
+initial
+begin
+	FUNCT[1] = 1'b0;
+	FUNCT[1] = #70000 1'b1;
+	FUNCT[1] = #10000 1'b0;
+end 
+// FUNCT[ 0 ]
+initial
+begin
+	FUNCT[0] = 1'b0;
+	FUNCT[0] = #10000 1'b1;
+	FUNCT[0] = #30000 1'b0;
+	FUNCT[0] = #10000 1'b1;
+	FUNCT[0] = #20000 1'b0;
+end 
+// Rd[ 4 ]
+initial
+begin
+	Rd[4] = 1'b0;
+end 
+// Rd[ 3 ]
+initial
+begin
+	Rd[3] = 1'b0;
+end 
+// Rd[ 2 ]
+initial
+begin
+	Rd[2] = 1'b0;
+end 
+// Rd[ 1 ]
+initial
+begin
+	Rd[1] = 1'b0;
+	Rd[1] = #70000 1'b1;
+	Rd[1] = #10000 1'b0;
+end 
+// Rd[ 0 ]
+initial
+begin
+	Rd[0] = 1'b0;
+	Rd[0] = #40000 1'b1;
+	Rd[0] = #30000 1'b0;
+end 
+// Rs[ 4 ]
+initial
+begin
+	Rs[4] = 1'b0;
+end 
+// Rs[ 3 ]
+initial
+begin
+	Rs[3] = 1'b0;
+end 
+// Rs[ 2 ]
+initial
+begin
+	Rs[2] = 1'b0;
+end 
+// Rs[ 1 ]
+initial
+begin
+	Rs[1] = 1'b0;
+	Rs[1] = #80000 1'b1;
+	Rs[1] = #30000 1'b0;
+end 
+// Rs[ 0 ]
+initial
+begin
+	Rs[0] = 1'b0;
+	Rs[0] = #40000 1'b1;
+	Rs[0] = #30000 1'b0;
+	Rs[0] = #70000 1'b1;
+	Rs[0] = #10000 1'b0;
+end 
+// Rt[ 4 ]
+initial
+begin
+	Rt[4] = 1'b0;
+end 
+// Rt[ 3 ]
+initial
+begin
+	Rt[3] = 1'b0;
+end 
+// Rt[ 2 ]
+initial
+begin
+	Rt[2] = 1'b0;
+end 
+// Rt[ 1 ]
+initial
+begin
+	Rt[1] = 1'b0;
+end 
+// Rt[ 0 ]
+initial
+begin
+	Rt[0] = 1'b0;
+	Rt[0] = #40000 1'b1;
+	Rt[0] = #70000 1'b0;
+end 
+// colocaValorAux[ 31 ]
+initial
+begin
+	colocaValorAux[31] = 1'b0;
+end 
+// colocaValorAux[ 30 ]
+initial
+begin
+	colocaValorAux[30] = 1'b0;
+end 
+// colocaValorAux[ 29 ]
+initial
+begin
+	colocaValorAux[29] = 1'b0;
+end 
+// colocaValorAux[ 28 ]
+initial
+begin
+	colocaValorAux[28] = 1'b0;
+end 
+// colocaValorAux[ 27 ]
+initial
+begin
+	colocaValorAux[27] = 1'b0;
+end 
+// colocaValorAux[ 26 ]
+initial
+begin
+	colocaValorAux[26] = 1'b0;
+end 
+// colocaValorAux[ 25 ]
+initial
+begin
+	colocaValorAux[25] = 1'b0;
+end 
+// colocaValorAux[ 24 ]
+initial
+begin
+	colocaValorAux[24] = 1'b0;
+end 
+// colocaValorAux[ 23 ]
+initial
+begin
+	colocaValorAux[23] = 1'b0;
+end 
+// colocaValorAux[ 22 ]
+initial
+begin
+	colocaValorAux[22] = 1'b0;
+end 
+// colocaValorAux[ 21 ]
+initial
+begin
+	colocaValorAux[21] = 1'b0;
+end 
+// colocaValorAux[ 20 ]
+initial
+begin
+	colocaValorAux[20] = 1'b0;
+end 
+// colocaValorAux[ 19 ]
+initial
+begin
+	colocaValorAux[19] = 1'b0;
+end 
+// colocaValorAux[ 18 ]
+initial
+begin
+	colocaValorAux[18] = 1'b0;
+end 
+// colocaValorAux[ 17 ]
+initial
+begin
+	colocaValorAux[17] = 1'b0;
+end 
+// colocaValorAux[ 16 ]
+initial
+begin
+	colocaValorAux[16] = 1'b0;
+end 
+// colocaValorAux[ 15 ]
+initial
+begin
+	colocaValorAux[15] = 1'b0;
+end 
+// colocaValorAux[ 14 ]
+initial
+begin
+	colocaValorAux[14] = 1'b0;
+end 
+// colocaValorAux[ 13 ]
+initial
+begin
+	colocaValorAux[13] = 1'b0;
+end 
+// colocaValorAux[ 12 ]
+initial
+begin
+	colocaValorAux[12] = 1'b0;
+end 
+// colocaValorAux[ 11 ]
+initial
+begin
+	colocaValorAux[11] = 1'b0;
+end 
+// colocaValorAux[ 10 ]
+initial
+begin
+	colocaValorAux[10] = 1'b0;
+end 
+// colocaValorAux[ 9 ]
+initial
+begin
+	colocaValorAux[9] = 1'b0;
+end 
+// colocaValorAux[ 8 ]
+initial
+begin
+	colocaValorAux[8] = 1'b0;
+end 
+// colocaValorAux[ 7 ]
+initial
+begin
+	colocaValorAux[7] = 1'b0;
+end 
+// colocaValorAux[ 6 ]
+initial
+begin
+	colocaValorAux[6] = 1'b0;
+end 
+// colocaValorAux[ 5 ]
+initial
+begin
+	colocaValorAux[5] = 1'b0;
+end 
+// colocaValorAux[ 4 ]
+initial
+begin
+	colocaValorAux[4] = 1'b0;
+end 
+// colocaValorAux[ 3 ]
+initial
+begin
+	colocaValorAux[3] = 1'b0;
+end 
+// colocaValorAux[ 2 ]
+initial
+begin
+	colocaValorAux[2] = 1'b0;
+end 
+// colocaValorAux[ 1 ]
+initial
+begin
+	colocaValorAux[1] = 1'b0;
+end 
+// colocaValorAux[ 0 ]
+initial
+begin
+	colocaValorAux[0] = 1'b0;
+end 
+initial 
+begin 
+#1000000 $finish;
+end 
+endmodule
+
