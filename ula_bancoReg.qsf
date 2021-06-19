@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C50F672C7
-set_global_assignment -name TOP_LEVEL_ENTITY multiplexador_matricial_8bits
+set_global_assignment -name TOP_LEVEL_ENTITY ula_bancoReg
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:44:50  MAY 13, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -61,14 +61,19 @@ set_global_assignment -name VHDL_FILE ula_bancoReg_TB.vhd
 set_global_assignment -name VHDL_FILE mux9to1.vhd
 set_global_assignment -name VHDL_FILE componentes_ula.vhd
 set_global_assignment -name VHDL_FILE multiplexador_matricial_8bits.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE AND_1_TO_7.vhd
 set_global_assignment -name VHDL_FILE desloca_1bit.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_multiplexador.vwf
 set_global_assignment -name VHDL_FILE multiplexador_matricial_8bits_TB.vhd
 set_global_assignment -name VHDL_FILE mult_const_2.vhd
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/lucaszm/Desktop/_SDA/ula_bancoReg/Waveform_multiplexador.vwf"
+set_global_assignment -name VHDL_FILE multiplexador_sequencial_8bits.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_multiplexador_sequencial.vwf
+set_global_assignment -name VHDL_FILE registrador_Nbits_Shift_direita.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_reg_shift_right.vwf
+set_global_assignment -name VHDL_FILE multiplexador_sequencial_8bits_TB.vhd
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/lucaszm/Desktop/_SDA/ula_bancoReg/Waveform_multiplexador_sequencial.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
